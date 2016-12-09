@@ -366,11 +366,11 @@ footer {
    position: fixed;
    position:absolute;
    display:block;
-     -webkit-transition: all 0.3s ease-in-out;
+   -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
    -o-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
-   transform: translate(-280px,0);
+   transform: translate(-280px,0); /* THIS MIGHT BE IT */
      -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
      -o-transform: translate(-280px,0); /** Opera **/
      -moz-transform: translate(-280px,0); /** Firefox **/
@@ -525,8 +525,8 @@ footer {
  .content-item {
    width:96%;
    margin:0 2% 25px;
-   float:left;
-   display:block;
+   float: left;
+   display: block;
  }
  .item-box {
    display:block;
@@ -542,7 +542,7 @@ footer {
  @media (min-width:460px) {
    .content {
      padding:1.5em 1%;
-     float:right;
+     float: right;
      width:90%;
      position: relative;
    }
