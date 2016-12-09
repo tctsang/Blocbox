@@ -2,11 +2,20 @@
 <html lang="en-us">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<meta charset="UTF-8">
 		<title>Save, share, and collaborate | Blocbox</title>
 
 		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Varela+Round" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Varela+Round" rel="stylesheet" type="text/css">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+
+		<!-- Animate -->
+		<link rel="stylesheet" href="animate.min.css">
 	</head>
 	<body>
 		<!-- Header -->
@@ -14,15 +23,16 @@
 			<nav class="container">
 				<div class="one-half">
 					<a href="index.html" class="site-logo"><img src="images/site-logo.png" alt="Blocbox" /></a>
-				</div>	
+				</div>
+				<div class="one-half">	
 					<ul>
 						<li><a href="signin.html">Sign In</a></li>
-						<li class="btn-outline"><a href="signup.html">
-						Sign Up</a></li>
+						<li class="btn-outline"><a href="signup.html">Sign Up</a></li>
 					</ul>
+				</div>
 			</nav>
-			<div class="conatiner hero">
-				<h1>Save, share, and collaborate</h1>
+			<div class="container hero">
+				<h1 class="animated fadeIn">Save, share, and collaborate</h1>
 				<p>Blockbox lets you collect and sort information.<br/>
 				Create simple notes, store images, and add links.
 				</p>
@@ -30,11 +40,13 @@
 				<img src="images/dashboard.png" alt="Blocbox" />
 			</div>	
 		</header>
+
 		<!-- Benefits -->
 		<main role="main">
 			<section class="benefits">
 				<ul class="container">
 					<li class="one-third">
+						<i class="fa fa-file-o"></i> <!-- Font Awesome -->
 						<h2>Create notes</h2>
 						<p>Using Markdown, you can create simple text-based
 						documents to save and share.  You can collaborate
@@ -42,6 +54,7 @@
 						</p>
 					</li>
 					<li class="one-third">
+						<i class="fa fa-picture-o"></i> <!-- Font Awesome -->
 						<h2>Save images</h2>
 						<p>Are there images you find interesting enough to
 						save?  Now you have a way to organize and store
@@ -49,6 +62,7 @@
 						</p>
 					</li>
 					<li class="one-third">
+					    <i class="fa fa-link"></i> <!-- Font Awesome -->
 						<h2>Add links</h2>
 						<p>Forget bookmarking sites in your browser.  With 
 						blocbox, you can add links, group them, and view
@@ -110,6 +124,9 @@
 						</div>
 					</li>
 				</ul>
+				<div class="container">
+  				 	<p class="small">*We will not collect your credit card information until your 30-day trial has ended.</p>
+ 				</div>
 			</section>
 
 			<!-- Testimonials -->
@@ -136,7 +153,7 @@
 						Freelance Designer, California
 						</p>
 					</li>
-					<li class="one-fourth">
+					<li class="one-fourth staggered">
 						<blockquote>
 							“blocbox has made it easier to find
 						and keep things I love.  I can share
@@ -166,7 +183,7 @@
 						Freelance Designer, California
 						</p>
 					</li>
-					<li class="one-fourth">
+					<li class="one-fourth staggered">
 						<blockquote>
 							“blocbox has made it easier to find
 						and keep things I love.  I can share
