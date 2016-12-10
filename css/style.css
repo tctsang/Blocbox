@@ -460,6 +460,11 @@ footer {
    text-align: center;
    margin-right:8px;
  }
+ .left-nav .settings ul li a i{
+   width:20px;
+   text-align: left;
+   margin: 0;
+ }
 
  /* For 'Active' State */
  .left-nav.active {
