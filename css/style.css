@@ -1,3 +1,4 @@
+
 html, body {
   overflow-x:hidden;
 }
@@ -460,11 +461,15 @@ footer {
    text-align: center;
    margin-right:8px;
  }
- .left-nav .settings ul li a i{
+.settings ul li a i{
    width:20px;
-   text-align: left;
-   margin: 0;
+   text-align: center;
+   margin: auto;
  }
+
+.menu-up li a i{
+  text-align: left;
+}
 
  /* For 'Active' State */
  .left-nav.active {
@@ -486,12 +491,13 @@ footer {
    width:35px;
    border-radius: 50%;
    margin-left:10px;
+   margin-top: 5px;
    display: inline-block;
  }
  .left-nav .settings p {
    display: inline-block;
    vertical-align: top;
-   padding-top: 8px;
+   padding-top: 12px;
    font-weight: 400;
    margin:0 0 0 10px;
  }
@@ -501,7 +507,7 @@ footer {
    text-align: right;
    float: right;
    margin-right:10px;
-   margin-top:8px;
+   margin-top:14px;
  }
 
  /* CONTENT */
