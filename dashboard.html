@@ -21,10 +21,10 @@
 	<body class="dashboard">
 
      <!-- RESPONSIVE NAV -->
-     <a class="hamburger" id="menu" href="#">&#9776;</a>
+     <a href="#" class="hamburger" id="menu">&#9776;</a>
      
 	   <!-- LEFT NAV -->
-     <nav id="left-nav" class="left-nav left-nav">
+     <nav id="left-nav" class="left-nav left-nav active">
      <a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
      <div class="items">
        <p>Items</p>
@@ -43,7 +43,7 @@
      </div>
      <div class="settings">
 			 <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
-			     <p>Joey Kirk</p>
+			     <p>Tim Tsang</p>
           <ul class="menu-up">
             <li>
               <a href="#"><i class="fa fa-cog"></i></a>
@@ -61,12 +61,12 @@
    </nav>
    <main role="main">
 
-   	<!-- CONTENT -->
+   	<!-- BENEFITS -->
    	<section class="content">
    		<div class="container">
    			<div class="header">
    				<h1>All Items</h1>
-          <ul class="menu-down">
+          <ul class="menu">
             <li>
               <a href="#" class="btn">+ Add</a>
               <ul>
@@ -171,7 +171,14 @@
     $(".menu-up").dropUp();
      $( "#menu-up" ).click(function() {
         $("#left-nav").toggleClass("open", 200);
-     });
+     });   
   </script>
+  <script type="text/javascript">
+    $(".menu").dropit();
+    $("#menu").click(function(){
+      $("#left-nav").toggleClass("open",200);
+    });
+  </script>
+
  </body>
  </html>

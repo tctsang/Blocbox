@@ -7,14 +7,65 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
+.dropit {
+    list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+    float: right;
+    display: inline-block;
+}
+.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 100px;
+    list-style: none;
+  padding: 20px;
+  margin: 20px 0 0;
+}
+.dropit .dropit-open .dropit-submenu {
+    display: block;
+    background: #FFFFFF;
+   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+   border-radius: 4px;
+}
+.dropit .dropit-open .dropit-submenu:after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 8px 8px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -8px;
+  right: 10px;
+ }
+ .dropit .dropit-open .dropit-submenu li {
+  display: block;
+  margin-bottom: 20px;
+ }
+ .dropit .dropit-open .dropit-submenu li:last-child {
+  margin-bottom: 0px;
+ }
+ .dropit .dropit-open .dropit-submenu li a {
+  color:#34495E;
+  text-decoration: none;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight:100;
+ }
+
 /**********************************/
 /* Version 1 'ADD' drop-down menu */
 /**********************************/
 /* These styles assume you are using ul and li */
 .dropDown {
     list-style: none;
-	padding: 0;
-	margin: 15px 0 0;
+  padding: 0;
+  margin: 15px 0 0;
     float: right;
     display: inline-block;
 }
@@ -27,8 +78,8 @@
     display: none;
     min-width: 100px;
     list-style: none;
-	padding: 20px;
-	margin: 20px 0 0;
+  padding: 20px;
+  margin: 20px 0 0;
 }
 .dropDown .dropDown-open .dropDown-submenu {
     display: block;
@@ -84,7 +135,7 @@
     min-width: 150px;
     list-style: none;
     padding: 20px;
-    margin: -100px 0 0;
+    margin: -117px 0 0;
 }
 .dropUp .dropUp-open .dropUp-submenu {
     display: block;
@@ -102,7 +153,7 @@
   width: 0;
   z-index: 1;
   top: 77px;
-  left: 136px;
+  left: 139px;
  }
  .dropUp .dropUp-open .dropUp-submenu li {
   display: block;
